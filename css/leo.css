@@ -1,0 +1,189 @@
+ul .home{
+    transition: all 0.4s ease-in-out;
+}
+
+@keyframes home {
+    to{
+        width: 30%;
+        transform: translateY(0%) translateX(-260%);
+    }
+}
+
+@keyframes courses {
+    from{
+        width: 30%;
+        transform: translateY(0%) translateX(-260%);
+    }
+    to{
+        width: 25%;
+        transform: translateY(0px) translateX(-230%);
+    }
+}
+@keyframes blog {
+    to{
+        width:20%;
+        transform: translateY(0px) translateX(-210%);
+    }
+}
+@keyframes pricing {
+    to{
+        width: 23%;
+        transform: translateY(0px) translateX(-105%);
+    }
+}
+@keyframes sign {
+    to{
+        width: 30%;
+        transform: translateY(0px) translateX(-5%);
+    }
+}
+
+/*reset anim*/
+
+@keyframes reset1{
+    from{
+        width: 25%;
+        transform: translateY(0px) translateX(-230%);
+    }
+    
+    to{
+        width: 30%;
+        transform: translateY(0%) translateX(-260%);
+    }
+}
+
+@keyframes reset2{
+    from{
+        width:20%;
+        transform: translateY(0px) translateX(-210%);
+    }
+    
+    to{
+        width: 30%;
+        transform: translateY(0%) translateX(-260%);
+    }
+}
+@keyframes reset3{
+    from{
+        
+        width: 23%;
+        transform: translateY(0px) translateX(-105%);
+    
+    }
+    
+    to{
+        width: 30%;
+        transform: translateY(0%) translateX(-260%);
+    }
+}
+@keyframes reset4{
+    from{
+        
+        width: 30%;
+        transform: translateY(0px) translateX(-5%);
+    
+    }
+    
+    to{
+        width: 30%;
+        transform: translateY(0%) translateX(-260%);
+    }
+}
+
+
+/*fin reset anim*/
+
+
+
+
+/*anim logo*/
+.logo,.foot-start{
+    cursor: pointer;
+}
+.logo:hover{
+    
+    animation: logo 1s ease-in-out forwards ;
+}
+
+@keyframes logo {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }    
+}
+
+.foot-start:hover .starxD{
+    animation: star 1s ease-in-out forwards ;
+}
+@keyframes star {
+    0%{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    70%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/*fin anim logo*/
+
+/*btn-ripple xD*/
+.btn-ripple{
+    overflow: hidden;
+    text-decoration: none;
+    transition: 0.3s;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg,#956227,#DF9755);
+  }
+  .btn-ripple:hover{
+    transform: translate(0,-5px);
+    box-shadow: -5px 5px 15px 0 #956227 ,
+                 5px -5px 15px 0 #DF9755;
+  }
+  
+  
+  
+  spanxD{
+    position:absolute;
+    background-color: #fff;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+  }
+  
+    @keyframes animate {
+  
+      0%{
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+      }
+      100%{
+        width:500px;
+        height:500px;
+        opacity: 0;
+      }
+      
+    }
+  
+  /*fin btn-ripple*/
+
+  main .right .glob .image-fille{
+    transition: 0.4s ease-in-out;
+    filter: grayscale(80%);
+  }
+
+  main .right:hover .glob .image-fille{
+    filter: grayscale(0%);
+    
+  }
+  
+  
